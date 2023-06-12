@@ -27,6 +27,7 @@ kind: Service
 metadata:
   name: gateway-clusterip-srv
 spec:
+  type: LoadBalancer
   selector:
     app: gateway
   ports:
